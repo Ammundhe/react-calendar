@@ -22,6 +22,8 @@
 .calender_year {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  width: 30%;
 }
 
 .calender_header h3 {
@@ -30,13 +32,10 @@
   padding: 0;
 }
 
-.calender_year h3 {
-  margin: 0 8px;
-}
-
 .calender_icon {
   width: 24px;
   height: 24px;
+  cursor: pointer;
 }
 
 .space_between {
@@ -54,6 +53,13 @@
 
 .calender_days_of_month {
   flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.calender_days_of_month > * {
+  height: 20px;
+  margin: 0;
+  padding: 0;
 }
 
 .calender_monthly_container {
@@ -69,4 +75,11 @@
 
 .calender_days_of_month {
   height: 85%;
+}
+
+.calender_month {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
 }
